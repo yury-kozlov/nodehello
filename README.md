@@ -1,1 +1,1 @@
-# nodehello
+# This is a test node.js application with docker file.

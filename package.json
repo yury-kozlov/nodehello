@@ -1,0 +1,15 @@
+{
+  "name": "node-hello",
+  "version": "1.0.0",
+  "description": "This is a test node js application. Open localhost:3001",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo ..TODO"
+  },
+  "author": "Yury Kozlov",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
