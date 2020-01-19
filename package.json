@@ -4,6 +4,7 @@
   "description": "This is a test node js application. Open localhost:3001",
   "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "echo ..TODO"
   },
   "author": "Yury Kozlov",

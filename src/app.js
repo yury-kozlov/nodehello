@@ -29,3 +29,16 @@ app.get('/api/users', (req, res) => {
     res.setHeader('my-custom-header', '123');
     res.send(users);
 })
+
+app.use('/', (req, res) => {
+    const url = `${host}:${port}${req.url}`;
+    console.log(`hit default routing for ${url}`);
+    
+    var result = {
+        url,
+        timestamp: new Date().toISOString(),
+        requestHeaders: req.headers,
+    };
+
+    res.send(result);
+})
