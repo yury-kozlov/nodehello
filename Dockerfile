@@ -26,7 +26,7 @@ ENTRYPOINT ["node", "src/app.js"]
 
 # command examples:
 # 1. build image (mind the dot at the end):
-#    docker build -t nodehello:1.0 .
+#    docker build -t nodehello:1.0.1 .
 
 # 2. start container (note that host is environment variable => IP address of container's host):
-#    docker run -p 3001:3001 -e PORT=3001 nodehello:1.0
+#    docker run -p 3001:3001 -e PORT=3001 nodehello:1.0.1

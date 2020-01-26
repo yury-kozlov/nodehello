@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-app-config
+  namespace: default
+data:
+  PORT: "{{ .Values.service.targetPort }}"
+  RELEASE_NAME: {{ .Release.Name }}
+{{- if .Values.environmentVariables.keyValues }}
+{{ toYaml .Values.environmentVariables.keyValues | indent 2 }}  
+{{- end }}
