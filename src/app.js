@@ -40,5 +40,9 @@ app.use('/', (req, res) => {
         requestHeaders: req.headers,
     };
 
+    if (url.indexOf('/env') >= 0) {
+        result.env = process.env;
+    }
+
     res.send(result);
 })
